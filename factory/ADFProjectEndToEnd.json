@@ -1,0 +1,15 @@
+{
+	"name": "ADFProjectEndToEnd",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "43012bff-18df-4b76-b3dd-6af8a30af54f",
+		"tenantId": "39b3c4cf-bbea-49bc-a88a-5b63024f967d"
+	}
+}

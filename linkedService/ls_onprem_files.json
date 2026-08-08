@@ -1,0 +1,17 @@
+{
+	"name": "ls_onprem_files",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\RoshanFiles\\ADF_Project1",
+			"userId": "rmaulikar17@gmail.com",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIxM2E0M2RjOS01OThjLTQ1YTgtOTU5ZC1kOWM4ZDliM2I0ZTIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "Roshan-SelfHosted",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

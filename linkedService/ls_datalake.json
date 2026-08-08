@@ -1,0 +1,12 @@
+{
+	"name": "ls_datalake",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://azurefundaroshanstorage.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDA3M0ZDNDE1LTZBMTctNEQwQi04MTYzLUIzQTM5MEQ4NzRFNV84ODBiYjdlNS02ZGNjLTQxM2YtODI1Yi1lNjI0ZTZkNThlZGYiDQp9"
+		}
+	}
+}
