@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFProjectEndToEnd"
+		},
+		"ls_azuresql_password": {
+			"value": ""
+		},
+		"ls_datalake_accountKey": {
+			"value": ""
+		},
+		"ls_onprem_files_password": {
+			"value": ""
+		},
+		"ls_azuresql_properties_typeProperties_server": {
+			"value": "azuresqlserverbyroshan.database.windows.net"
+		},
+		"ls_azuresql_properties_typeProperties_database": {
+			"value": "ADF_ProjectDB"
+		},
+		"ls_azuresql_properties_typeProperties_userName": {
+			"value": "adminroshan"
+		},
+		"ls_datalake_properties_typeProperties_url": {
+			"value": "https://azurefundaroshanstorage.dfs.core.windows.net/"
+		},
+		"ls_github_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"ls_onprem_files_properties_typeProperties_host": {
+			"value": "C:\\RoshanFiles\\ADF_Project1"
+		},
+		"ls_onprem_files_properties_typeProperties_userId": {
+			"value": "rmaulikar17@gmail.com"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
