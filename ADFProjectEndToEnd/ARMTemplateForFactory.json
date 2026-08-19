@@ -1210,8 +1210,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "empty.json",
-						"folderPath": "monitor/lastload",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/monitor/lastload",
+						"fileSystem": "airlineprojectpipeline"
 					}
 				},
 				"schema": {}
@@ -1235,8 +1235,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "lastload.json",
-						"folderPath": "monitor/lastload",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/monitor/lastload",
+						"fileSystem": "airlineprojectpipeline"
 					}
 				},
 				"schema": {}
@@ -1385,7 +1385,7 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "FactBooking",
-						"folderPath": "bronze/sql",
+						"folderPath": "bronze/sqlazure",
 						"fileSystem": "airlineprojectpipeline"
 					},
 					"compressionCodec": "snappy"
