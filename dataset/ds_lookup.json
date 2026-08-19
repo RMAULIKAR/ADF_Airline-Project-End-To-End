@@ -11,8 +11,8 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "lastload.json",
-				"folderPath": "monitor/lastload",
-				"fileSystem": "bronze"
+				"folderPath": "bronze/monitor/lastload",
+				"fileSystem": "airlineprojectpipeline"
 			}
 		},
 		"schema": {}
