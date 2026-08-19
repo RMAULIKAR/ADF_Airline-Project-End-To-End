@@ -12,7 +12,7 @@
 				"type": "AzureBlobFSLocation",
 				"fileName": "DimAirline.csv",
 				"folderPath": "bronze/onprem",
-				"fileSystem": "airlinepipelineproject"
+				"fileSystem": "airlineprojectpipeline"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
