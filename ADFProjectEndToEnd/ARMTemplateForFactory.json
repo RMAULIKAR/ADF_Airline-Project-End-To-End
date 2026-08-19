@@ -1431,7 +1431,8 @@
 					"password": {
 						"type": "SecureString",
 						"value": "[parameters('ls_azuresql_password')]"
-					}
+					},
+					"connectTimeout": "300"
 				}
 			},
 			"dependsOn": []
