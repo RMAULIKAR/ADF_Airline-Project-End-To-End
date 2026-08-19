@@ -131,8 +131,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "DimPassenger.csv",
-						"folderPath": "onprem",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/onprem",
+						"fileSystem": "airlineprojectpipeline"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -208,8 +208,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "DimAirline.csv",
-						"folderPath": "onprem",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/onprem",
+						"fileSystem": "airlineprojectpipeline"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -237,8 +237,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "DimAirport.json",
-						"folderPath": "github",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/github",
+						"fileSystem": "airlineprojectpipeline"
 					}
 				},
 				"schema": {}
@@ -262,8 +262,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "DimFlight.csv",
-						"folderPath": "onprem",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/onprem",
+						"fileSystem": "airlineprojectpipeline"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -378,8 +378,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "FactBooking",
-						"folderPath": "sql",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/sqlazure",
+						"fileSystem": "airlineprojectpipeline"
 					},
 					"compressionCodec": "snappy"
 				},

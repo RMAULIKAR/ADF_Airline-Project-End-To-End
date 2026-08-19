@@ -1050,8 +1050,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "DimPassenger.csv",
-						"folderPath": "onprem",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/onprem",
+						"fileSystem": "airlineprojectpipeline"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -1127,8 +1127,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "DimAirline.csv",
-						"folderPath": "onprem",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/onprem",
+						"fileSystem": "airlineprojectpipeline"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -1156,8 +1156,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "DimAirport.json",
-						"folderPath": "github",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/github",
+						"fileSystem": "airlineprojectpipeline"
 					}
 				},
 				"schema": {}
@@ -1181,8 +1181,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "DimFlight.csv",
-						"folderPath": "onprem",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/onprem",
+						"fileSystem": "airlineprojectpipeline"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -1359,8 +1359,8 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "FactBooking",
-						"folderPath": "sql",
-						"fileSystem": "bronze"
+						"folderPath": "bronze/sqlazure",
+						"fileSystem": "airlineprojectpipeline"
 					},
 					"compressionCodec": "snappy"
 				},
@@ -2018,8 +2018,8 @@
 						"alterRow1 sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     format: 'delta',",
-						"     fileSystem: 'silver',",
-						"     folderPath: 'DimAirline',",
+						"     fileSystem: 'airlineprojectpipeline',",
+						"     folderPath: 'silver/DimAirline',",
 						"     mergeSchema: false,",
 						"     autoCompact: false,",
 						"     optimizedWrite: false,",
@@ -2037,8 +2037,8 @@
 						"alterRow2 sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     format: 'delta',",
-						"     fileSystem: 'silver',",
-						"     folderPath: 'DimFlight',",
+						"     fileSystem: 'airlineprojectpipeline',",
+						"     folderPath: 'silver/DimFlight',",
 						"     mergeSchema: false,",
 						"     autoCompact: false,",
 						"     optimizedWrite: false,",
@@ -2056,8 +2056,8 @@
 						"alterRow3 sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     format: 'delta',",
-						"     fileSystem: 'silver',",
-						"     folderPath: 'DimPassenger',",
+						"     fileSystem: 'airlineprojectpipeline',",
+						"     folderPath: 'silver/DimPassenger',",
 						"     mergeSchema: false,",
 						"     autoCompact: false,",
 						"     optimizedWrite: false,",
@@ -2075,8 +2075,8 @@
 						"alterRow4 sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     format: 'delta',",
-						"     fileSystem: 'silver',",
-						"     folderPath: 'FactBookings',",
+						"     fileSystem: 'airlineprojectpipeline',",
+						"     folderPath: 'silver/FactBookings',",
 						"     mergeSchema: false,",
 						"     autoCompact: false,",
 						"     optimizedWrite: false,",
@@ -2094,8 +2094,8 @@
 						"alterRow5 sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     format: 'delta',",
-						"     fileSystem: 'silver',",
-						"     folderPath: 'DimAirport',",
+						"     fileSystem: 'airlineprojectpipeline',",
+						"     folderPath: 'silver/DimAirport',",
 						"     mergeSchema: false,",
 						"     autoCompact: false,",
 						"     optimizedWrite: false,",
