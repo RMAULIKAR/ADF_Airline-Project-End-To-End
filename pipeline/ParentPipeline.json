@@ -12,7 +12,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "OnPremIngestion",
+						"referenceName": "Stg_OnPremIngestion",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true,
@@ -53,7 +53,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "API_Ingestion",
+						"referenceName": "Stg_API_Ingestion",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true
@@ -76,7 +76,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "SQLToDataLakeNew",
+						"referenceName": "Stg_SQLToDataLakeNew",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true

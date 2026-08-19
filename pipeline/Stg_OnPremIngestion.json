@@ -1,5 +1,5 @@
 {
-	"name": "OnPremIngestion",
+	"name": "Stg_OnPremIngestion",
 	"properties": {
 		"activities": [
 			{
