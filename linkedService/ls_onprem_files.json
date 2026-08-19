@@ -5,9 +5,9 @@
 		"annotations": [],
 		"type": "FileServer",
 		"typeProperties": {
-			"host": "C:\\RoshanFiles\\ADF_Project1",
+			"host": "C:\\Users\\hp\\Downloads\\1_My_Folders\\Courses_for_IT\\01 DATA ENGINEER\\Projects DE\\03_ADF_Airline-Project-End-To-End\\files",
 			"userId": "rmaulikar17@gmail.com",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIxM2E0M2RjOS01OThjLTQ1YTgtOTU5ZC1kOWM4ZDliM2I0ZTIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0NTExNTQyZS1mMzBhLTQ1ZTUtOGNmZi0wNzZiODE1MjAxOTAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "Roshan-SelfHosted",
