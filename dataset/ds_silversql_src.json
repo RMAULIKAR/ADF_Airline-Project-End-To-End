@@ -11,8 +11,8 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "FactBooking",
-				"folderPath": "sql",
-				"fileSystem": "bronze"
+				"folderPath": "bronze/sqlazure",
+				"fileSystem": "airlineprojectpipeline"
 			},
 			"compressionCodec": "snappy"
 		},
