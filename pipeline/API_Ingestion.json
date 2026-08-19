@@ -1,5 +1,5 @@
 {
-	"name": "pipeline4_API_Ingestion",
+	"name": "API_Ingestion",
 	"properties": {
 		"activities": [
 			{

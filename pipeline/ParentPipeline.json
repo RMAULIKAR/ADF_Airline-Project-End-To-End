@@ -12,7 +12,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "pipeline1_Main_OnPremIngestion",
+						"referenceName": "OnPremIngestion",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true,
@@ -53,7 +53,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "pipeline4_API_Ingestion",
+						"referenceName": "API_Ingestion",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true
