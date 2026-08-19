@@ -11,8 +11,8 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "DimAirport.json",
-				"folderPath": "github",
-				"fileSystem": "bronze"
+				"folderPath": "bronze/github",
+				"fileSystem": "airlineprojectpipeline"
 			}
 		},
 		"schema": {}
