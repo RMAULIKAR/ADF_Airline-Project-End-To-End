@@ -19,8 +19,8 @@
 					"value": "@dataset().p_file_name",
 					"type": "Expression"
 				},
-				"folderPath": "onprem",
-				"fileSystem": "bronze"
+				"folderPath": "/bronze/onprem",
+				"fileSystem": "airlineprojectpipeline"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
