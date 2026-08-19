@@ -41,7 +41,7 @@
 		},
 		"ls_onprem_files_properties_typeProperties_host": {
 			"type": "string",
-			"defaultValue": "C:\\RoshanFiles\\ADF_Project1"
+			"defaultValue": "C:\\Users\\hp\\Downloads\\1_My_Folders\\Courses_for_IT\\01 DATA ENGINEER\\Projects DE\\03_ADF_Airline-Project-End-To-End\\files"
 		},
 		"ls_onprem_files_properties_typeProperties_userId": {
 			"type": "string",
