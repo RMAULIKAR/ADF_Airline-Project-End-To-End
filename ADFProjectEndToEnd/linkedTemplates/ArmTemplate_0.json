@@ -721,14 +721,14 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/GoldLayer')]",
+			"name": "[concat(parameters('factoryName'), '/API_Ingestion')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"activities": [
 					{
-						"name": "GoldDataflow",
-						"type": "ExecuteDataFlow",
+						"name": "WebAPICall",
+						"type": "WebActivity",
 						"dependsOn": [],
 						"policy": {
 							"timeout": "0.12:00:00",
@@ -739,35 +739,77 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"dataflow": {
-								"referenceName": "DataServing",
-								"type": "DataFlowReference",
-								"parameters": {},
-								"datasetParameters": {
-									"DimAirline": {},
-									"DimFlight": {},
-									"FactBookings": {},
-									"BusinessView1": {},
-									"BusinessView2": {}
+							"method": "GET",
+							"headers": {},
+							"url": "https://raw.githubusercontent.com/RMAULIKAR/ADF_Project/refs/heads/main/DimAirport.json"
+						}
+					},
+					{
+						"name": "CopyAPIData",
+						"type": "Copy",
+						"dependsOn": [
+							{
+								"activity": "WebAPICall",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"source": {
+								"type": "JsonSource",
+								"storeSettings": {
+									"type": "HttpReadSettings",
+									"requestMethod": "GET"
+								},
+								"formatSettings": {
+									"type": "JsonReadSettings"
 								}
 							},
-							"staging": {},
-							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+							"sink": {
+								"type": "JsonSink",
+								"storeSettings": {
+									"type": "AzureBlobFSWriteSettings"
+								},
+								"formatSettings": {
+									"type": "JsonWriteSettings"
+								}
 							},
-							"traceLevel": "Fine"
-						}
+							"enableStaging": false
+						},
+						"inputs": [
+							{
+								"referenceName": "ds_api_source",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						],
+						"outputs": [
+							{
+								"referenceName": "ds_api_sink",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						]
 					}
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
 				"annotations": [],
-				"lastPublishTime": "2026-08-08T21:02:28Z"
+				"lastPublishTime": "2026-08-06T20:00:43Z"
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/dataflows/DataServing')]"
+				"[concat(variables('factoryId'), '/datasets/ds_api_source')]",
+				"[concat(variables('factoryId'), '/datasets/ds_api_sink')]"
 			]
 		}
 	]
